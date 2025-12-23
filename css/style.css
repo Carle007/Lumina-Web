@@ -595,3 +595,23 @@ html, body {
     display: inline-block !important;
     vertical-align: middle;
 }
+
+/* ===============================
+   FIX REDES SOCIALES FOOTER
+================================ */
+
+.footer-social {
+    display: flex !important;
+    justify-content: center;
+    align-items: center;
+    gap: 16px;
+}
+
+.footer-social a {
+    display: inline-flex !important;
+    align-items: center;
+}
+
+.footer-social img {
+    display: inline-block !important;
+}
