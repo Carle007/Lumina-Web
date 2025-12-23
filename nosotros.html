@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>AXIONA | Nosotros</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body data-page="nosotros">
+
+    <!-- HEADER / NAV -->
+    <div id="header-container"></div>
+
+    <!-- CONTENIDO -->
+    <main class="section">
+
+        <section class="block hero fade-in">
+            <h1>Quiénes Somos</h1>
+            <p class="subtitle">
+                En <strong>AXIONA</strong> somos una empresa de ingeniería y automatización industrial enfocada en diagnosticar, optimizar y dar continuidad a sistemas industriales.
+                Entendemos las plantas como sistemas vivos: con procesos, flujos, señales y decisiones que deben mantenerse en equilibrio para operar de forma eficiente y confiable.
+            </p>
+            <p class="subtitle">
+                Actuamos como el especialista que analiza, interpreta y corrige fallas técnicas, operativas y de integración, asegurando que cada sistema mantenga su “pulso” operativo y evolucione hacia un mejor desempeño.
+            </p>
+        </section>
+
+        <section class="block emphasis fade-in">
+            <h2>Misión</h2>
+            <p>
+                Mantener y fortalecer el pulso operativo de los sistemas industriales mediante
+                soluciones de automatización, control e integración confiables, eficientes y bien
+                fundamentadas técnicamente.
+            </p>
+        </section>
+
+        <section class="block emphasis fade-in">
+            <h2>Visión</h2>
+            <p>
+                Ser un referente en ingeniería industrial aplicada, reconocido por nuestra capacidad
+                de diagnosticar, corregir y optimizar sistemas complejos, manteniéndolos vivos,
+                estables y en constante mejora.
+            </p>
+        </section>
+
+        <section class="block emphasis fade-in">
+            <h2>Objetivo</h2>
+            <p>
+                Diseñar, mejorar e integrar soluciones industriales que aseguren continuidad operativa,
+                eficiencia energética, confiabilidad y crecimiento tecnológico a largo plazo.
+            </p>
+        </section>
+
+        <section class="block emphasis fade-in">
+            <h2>Nuestro Enfoque</h2>
+            <p>
+                En AXIONA no solo corregimos fallas. Analizamos el sistema completo: su lógica,
+                su comportamiento, su interacción con operadores y su entorno.
+                Cada solución parte de un diagnóstico técnico profundo y se implementa con criterio,
+                claridad y visión de futuro.
+            </p>
+        </section>
+
+    </main>
+
+    <!-- FOOTER -->
+    <div id="footer-container"></div>
+
+    <script src="js/main.js"></script>
+
+    <script>
+    // Animaciones al hacer scroll
+    const fadeElements = document.querySelectorAll('.fade-in');
+    const observer = new IntersectionObserver(entries => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                entry.target.classList.add('visible');
+                observer.unobserve(entry.target);
+            }
+        });
+    }, { threshold: 0.2 });
+    fadeElements.forEach(el => observer.observe(el));
+    </script>
+
+</body>
+</html>

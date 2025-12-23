@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>AXIONA | Contacto</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body data-page="contacto">
+
+    <!-- HEADER -->
+    <div id="header-container"></div>
+
+    <!-- CONTENIDO -->
+    <main class="section">
+
+        <section class="block hero fade-in">
+            <h1>Contacto</h1>
+            <p class="subtitle">
+                En AXIONA creemos que todo proyecto sólido comienza con una conversación clara.
+                Si tienes un sistema que requiere diagnóstico, mejora o integración,
+                podemos analizarlo contigo desde un enfoque técnico y estructurado.
+            </p>
+        </section>
+
+        <section class="block contact fade-in">
+            <h2>Cómo trabajar con nosotros</h2>
+            <p>
+                Cada proyecto inicia con la comprensión del sistema actual,
+                sus restricciones y sus objetivos operativos.
+                A partir de ahí, definimos el alcance técnico y la mejor ruta de implementación.
+            </p>
+        </section>
+
+        <section class="block contact fade-in">
+            <h2>Información de contacto</h2>
+            <ul class="contact-list">
+                <li><strong>Empresa:</strong> AXIONA</li>
+                <li><strong>Área:</strong> Automatización y Control Industrial</li>
+                <li><strong>Correo:</strong> contacto@axiona.com</li>
+                <li><strong>Ubicación:</strong> México</li>
+            </ul>
+        </section>
+
+        <section class="block emphasis fade-in">
+            <h2>Enfoque técnico</h2>
+            <p>
+                Trabajamos con criterio de ingeniería, documentación clara
+                y soluciones pensadas para operar hoy y evolucionar mañana.
+            </p>
+        </section>
+
+    </main>
+
+    <!-- FOOTER -->
+    <div id="footer-container"></div>
+
+    <script src="js/main.js"></script>
+    <script>
+    const fadeElements = document.querySelectorAll('.fade-in');
+    const observer = new IntersectionObserver(entries => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                entry.target.classList.add('visible');
+                observer.unobserve(entry.target);
+            }
+        });
+    }, { threshold: 0.2 });
+    fadeElements.forEach(el => observer.observe(el));
+    </script>
+
+</body>
+</html>
