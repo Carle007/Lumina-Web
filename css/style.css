@@ -527,9 +527,8 @@ html, body {
     }
 }
 
-
-
-
-
-
-
+@media (max-width: 768px) {
+    ul li {
+        margin-bottom: 6px;
+    }
+}
