@@ -25,6 +25,12 @@
     box-sizing: border-box;
 }
 
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
 body {
     font-family: 'Inter', 'Segoe UI', Arial, Helvetica, sans-serif;
     background-color: var(--bg-main);
@@ -358,18 +364,34 @@ ul li::before {
    RESPONSIVE
 ================================ */
 @media (max-width: 768px) {
-    h1 {
-        font-size: 2.2rem;
+
+    .header-main {
+        flex-direction: column;
+        text-align: center;
+        gap: 10px;
     }
-    h2 {
-        font-size: 1.6rem;
+
+    .header-nav ul {
+        flex-wrap: wrap;
+        justify-content: center;
     }
-    .hero h1 {
-        font-size: 2.4rem;
+
+    .service-content {
+        flex-direction: column;
+        text-align: center;
     }
-    .grid {
-        gap: 20px;
+
+    .service-img-service {
+        width: 100%;
+        max-width: 280px;
+        height: auto;
     }
+
+    .footer-row {
+        flex-direction: column;
+        text-align: center;
+    }
+
 }
 
 .grid > div { 
@@ -390,6 +412,7 @@ ul li::before {
     display: flex;
     align-items: center; /* centra verticalmente la imagen con el texto */
     gap: 20px;
+   flex-wrap: wrap; /* 🔥 esto es clave */
 }
 
 .service-img-service {
@@ -461,3 +484,4 @@ ul li::before {
     font-size: 0.9rem;
     color: #bfbfbf;
 }
+
