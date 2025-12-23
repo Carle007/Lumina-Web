@@ -566,27 +566,32 @@ html, body {
 }
 
 /* ===============================
-   TOP BAR FIX (DESKTOP)
+   FIX DEFINITIVO TOP BAR
 ================================ */
 
 .top-bar {
-    display: flex;
+    display: flex !important;
     justify-content: space-between;
     align-items: center;
 }
 
-/* CONTACTO: TELEFONO + CORREO EN FILA */
-.top-contact {
-    display: flex;
-    flex-direction: row;
+/* TODO lo que esté dentro a fuerza en fila */
+.top-bar > div {
+    display: flex !important;
+    flex-direction: row !important;
     align-items: center;
-    gap: 20px;
 }
 
-/* REDES: ICONOS EN FILA */
-.top-social {
-    display: flex;
-    flex-direction: row;
+/* Texto e iconos NO en block */
+.top-bar span,
+.top-bar a {
+    display: inline-flex !important;
     align-items: center;
-    gap: 12px;
+    margin-right: 20px;
+}
+
+/* Iconos redes */
+.top-bar img {
+    display: inline-block !important;
+    vertical-align: middle;
 }
