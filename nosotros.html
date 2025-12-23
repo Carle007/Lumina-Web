@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Lumina | Nosotros</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body data-page="nosotros">
+
+    <!-- HEADER / NAV -->
+    <div id="header-container"></div>
+
+    <!-- CONTENIDO -->
+    <main class="section">
+
+        <section class="block hero fade-in">
+            <h1>Quiénes somos</h1>
+            <p class="subtitle">
+                En <strong>Lumina</strong> creamos decoraciones que transforman espacios y momentos en experiencias memorables.
+                Nos especializamos en diseñar arreglos para eventos cuidando cada detalle, desde la idea inicial hasta el montaje final.
+                Creemos que cada celebración merece un ambiente único, armonioso y lleno de personalidad.
+            </p>
+            <p class="subtitle">
+                Actuamos como el especialista que analiza, interpreta y corrige fallas técnicas, operativas y de integración, asegurando que cada sistema mantenga su “pulso” operativo y evolucione hacia un mejor desempeño.
+            </p>
+        </section>
+
+        <section class="block emphasis fade-in">
+            <h2>Misión</h2>
+            <p>
+                Crear decoraciones para eventos que transmitan emoción, elegancia y calidez, ofreciendo soluciones creativas y personalizadas para cada cliente.
+            </p>
+        </section>
+
+        <section class="block emphasis fade-in">
+            <h2>Visión</h2>
+            <p>
+                Ser una marca reconocida por la calidad, creatividad y dedicación en la decoración de eventos, convirtiéndonos en un referente de confianza para celebraciones especiales.
+            </p>
+        </section>
+
+        <section class="block emphasis fade-in">
+            <h2>Objetivo</h2>
+            <p>
+                Diseñar y montar arreglos decorativos que aporten estilo, armonía y un toque especial a cada evento, superando las expectativas de nuestros clientes.
+            </p>
+        </section>
+
+        <section class="block emphasis fade-in">
+            <h2>Nuestro Enfoque</h2>
+            <p>
+                En Lumina cuidamos cada detalle. Escuchamos a nuestros clientes, entendemos su idea y la transformamos en una decoración que refleje exactamente lo que desean para su evento.
+            </p>
+        </section>
+
+    </main>
+
+    <!-- FOOTER -->
+    <div id="footer-container"></div>
+
+    <script src="js/main.js"></script>
+
+    <script>
+    // Animaciones al hacer scroll
+    const fadeElements = document.querySelectorAll('.fade-in');
+    const observer = new IntersectionObserver(entries => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                entry.target.classList.add('visible');
+                observer.unobserve(entry.target);
+            }
+        });
+    }, { threshold: 0.2 });
+    fadeElements.forEach(el => observer.observe(el));
+    </script>
+
+</body>
+</html>

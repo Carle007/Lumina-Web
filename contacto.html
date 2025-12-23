@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Lumina | Contacto</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body data-page="contacto">
+
+    <!-- HEADER -->
+    <div id="header-container"></div>
+
+    <!-- CONTENIDO -->
+    <main class="section">
+
+        <section class="block hero fade-in">
+            <h1>Contacto</h1>
+            <p class="subtitle">
+                En Lumina creemos que cada evento especial comienza con una buena conversación.
+                Si tienes una idea, una celebración o un concepto en mente, podemos ayudarte a transformarlo en una decoración única, cuidada y llena de significado.
+                Estamos listos para escucharte, asesorarte y crear juntos un ambiente que refleje lo que quieres transmitir.
+            </p>
+        </section>
+
+        <section class="block contact fade-in">
+            <h2>Cómo trabajar con nosotros</h2>
+            <p>
+                Cada proyecto comienza escuchando tu idea, el tipo de evento y la atmósfera que deseas crear.
+                A partir de ahí, definimos el estilo, los elementos decorativos y los detalles que mejor se adapten a tu celebración, cuidando cada aspecto para lograr un resultado armonioso y especial.
+                Te acompañamos desde la planeación hasta el montaje final, asegurando que cada detalle brille en el momento indicado.
+            </p>
+        </section>
+
+        <section class="block contact fade-in">
+            <h2>Información de contacto</h2>
+            <ul class="contact-list">
+                <li><strong>Empresa:</strong> Lumina</li>
+                <li><strong>Área:</strong> Arreglos decorativos y ambientación para eventos</li>
+                <li><strong>Correo:</strong> contacto@lumina.com</li>
+                <li><strong>Ubicación:</strong> México</li>
+            </ul>
+        </section>
+
+        <section class="block emphasis fade-in">
+            <h2>Enfoque</h2>
+            <p>
+                Trabajamos con atención al detalle, sensibilidad estética y una planeación clara, creando decoraciones que funcionan en conjunto y se adaptan al estilo de cada evento.
+                Cada arreglo está pensado para lucir impecable en el momento y dejar una impresión duradera.
+            </p>
+        </section>
+
+    </main>
+
+    <!-- FOOTER -->
+    <div id="footer-container"></div>
+
+    <script src="js/main.js"></script>
+    <script>
+    const fadeElements = document.querySelectorAll('.fade-in');
+    const observer = new IntersectionObserver(entries => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                entry.target.classList.add('visible');
+                observer.unobserve(entry.target);
+            }
+        });
+    }, { threshold: 0.2 });
+    fadeElements.forEach(el => observer.observe(el));
+    </script>
+
+</body>
+</html>

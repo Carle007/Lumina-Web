@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Lumina | Arreglos</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body data-page="inicio">
+
+    <!-- HEADER DINÁMICO -->
+    <div id="header-container"></div>
+
+    <!-- CONTENIDO PRINCIPAL -->
+    <main class="section">
+
+        <!-- HERO -->
+        <section class="block hero fade-in">
+            <h1>Lumina</h1>
+            <p class="subtitle">
+                Arreglos decorativos diseñados para crear ambientes únicos y momentos inolvidables.
+            </p>
+        </section>
+
+        <!-- Qué hacemos -->
+        <section class="block fade-in">
+            <h2>Qué hacemos</h2>
+            <p>
+                Creamos arreglos y ambientaciones para eventos, combinando diseño, creatividad y ejecución precisa para transformar espacios en experiencias memorables.
+            </p>
+            <p>
+                Consideramos cada elemento como parte de un todo: concepto, decoración, iluminación y atmósfera.
+            </p>
+        </section>
+
+        <!-- Servicios destacados en GRID -->
+        <section class="block grid">
+            <div class="fade-in">
+                <img src="Imagenes/Planeacion.jpg" alt="Planeación personalizada" class="service-img">
+                <h3>Planeación personalizada</h3>
+                <p>
+                    Comprensión de la idea del cliente, el tipo de evento y el entorno. Evaluación de colores, materiales y distribución del espacio.
+                </p>
+            </div>
+
+            <div class="fade-in">
+                <img src="Imagenes/Montaje.jpg" alt="Ejecución del diseño" class="service-img">
+                <h3>Ejecución del diseño</h3>
+                <p>
+                    Montaje cuidadoso de centros de mesa, velas, globos y elementos decorativos, asegurando armonía y equilibrio visual.
+                </p>    
+            </div>
+
+            <div class="fade-in">
+                <img src="Imagenes/Detalles.jpg" alt="Detalles y acabados" class="service-img">
+                <h3>Detalles y acabados</h3>
+                <p>
+                    Ajuste fino de cada elemento decorativo para lograr equilibrio visual, fluidez del espacio y una experiencia armoniosa.
+                </p>
+            </div>
+
+            <div class="fade-in">
+                <img src="Imagenes/Integracion.jpg" alt="Integración del diseño" class="service-img">
+                <h3>Integración del diseño</h3>
+                <p>
+                    Unificación de colores, estilos y elementos decorativos para crear un ambiente visualmente equilibrado.
+                </p>
+            </div>
+        </section>
+
+        <!-- Bloque de énfasis -->
+        <section class="block emphasis fade-in">
+            <h2>Estado del evento</h2>
+            <p>
+                Un evento memorable no es el más grande, sino el que está cuidado en cada detalle.
+            </p>
+
+            <div class="status">
+                <span class="status-dot active"></span>
+                <span class="status-text">Montaje listo: ACTIVO</span>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- FOOTER DINÁMICO -->
+    <div id="footer-container"></div>
+
+    <script src="js/main.js"></script>
+
+    <!-- Animaciones al scroll -->
+    <script>
+    const fadeElements = document.querySelectorAll('.fade-in');
+
+    const observer = new IntersectionObserver(entries => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                entry.target.classList.add('visible');
+                observer.unobserve(entry.target);
+            }
+        });
+    }, { threshold: 0.2 });
+
+    fadeElements.forEach(el => observer.observe(el));
+    </script>
+
+</body>
+</html>

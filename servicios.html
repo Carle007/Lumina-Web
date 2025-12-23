@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Lumina | Servicios</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body data-page="servicios">
+
+    <!-- HEADER -->
+    <div id="header-container"></div>
+
+    <!-- CONTENIDO -->
+    <main class="section">
+
+        <section class="block hero fade-in">
+            <h1>Servicios</h1>
+            <p class="subtitle">
+                En AXIONA ofrecemos soluciones de automatización industrial enfocadas en
+                estabilidad operativa, confiabilidad del sistema y evolución tecnológica.
+                Cada servicio parte de un análisis técnico profundo y una implementación precisa.
+            </p>
+        </section>
+
+        <section class="block service fade-in">
+    <div class="service-content">
+        <img src="Imagenes/Centros.jpg" alt="Diseño de Tableros" class="service-img-service">
+        <div class="service-text">
+            <h2>Centros de mesa</h2>
+            <p>
+                Diseños personalizados que complementan y realzan la ambientación del evento.
+            </p>
+            <ul>
+                <li>Diseños acordes al estilo y temática del evento</li>
+                <li>Combinación equilibrada de materiales, colores y alturas</li>
+                <li>Detalles que aportan armonía y elegancia a cada mesa</li>
+            </ul>
+        </div>
+    </div>
+</section>
+
+        <section class="block service fade-in">
+    <div class="service-content">
+        <img src="Imagenes/Velas.jpg" alt="Diseño de Tableros" class="service-img-service">
+        <div class="service-text">
+            <h2>Velas decorativas</h2>
+            <p>
+                Elementos que aportan calidez, elegancia y una atmósfera especial.
+            </p>
+            <ul>
+                <li>Velas decorativas para ambientación y centros de mesa</li>
+                <li>Creación de atmósferas cálidas y acogedoras</li>
+                <li>Integración con otros elementos decorativos</li>
+            </ul>
+        </div>
+    </div>
+</section>
+
+        <section class="block service fade-in">
+    <div class="service-content">
+        <img src="Imagenes/Globos.jpeg" alt="Diseño de Tableros" class="service-img-service">
+        <div class="service-text">
+            <h2>Arreglos con globos</h2>
+            <p>
+                Decoraciones creativas y modernas para todo tipo de celebraciones.
+            </p>
+            <ul>
+                <li>Diseños modernos y creativos para todo tipo de evento</li>
+                <li>Arcos, columnas y arreglos personalizados</li>
+                <li>Combinación de colores y estilos según la ocasión</li>
+            </ul>
+        </div>
+    </div>
+</section>
+
+        <section class="block service fade-in">
+    <div class="service-content">
+        <img src="Imagenes/Mesas.jpeg" alt="Diseño de Tableros" class="service-img-service">
+        <div class="service-text">
+            <h2>Mesas de dulces</h2>
+            <p>
+                Montajes atractivos que combinan estética y sabor.
+            </p>
+            <ul>
+                <li>Montajes visualmente atractivos y bien organizados</li>
+                <li>Selección y presentación cuidada de dulces y postres</li>
+                <li>Decoración acorde a la temática del evento</li>
+            </ul>
+        </div>
+    </div>
+</section>
+
+        <section class="block service fade-in">
+    <div class="service-content">
+        <img src="Imagenes/Arreglos.jpg" alt="Diseño de Tableros" class="service-img-service">
+        <div class="service-text">
+            <h2>Arreglos personalizados</h2>
+            <p>
+                Proyectos decorativos a la medida, adaptados a la temática y estilo del evento.
+            </p>
+            <ul>
+                <li>Diseño de piezas decorativas únicas y a la medida</li>
+                <li>Adaptación a espacios, colores y conceptos específicos</li>
+                <li>Atención a cada detalle para lograr un resultado especial</li>
+            </ul>
+        </div>
+    </div>
+</section>
+
+        <section class="block service fade-in">
+    <div class="service-content">
+        <img src="Imagenes/Decoracion_I.webp" alt="Diseño de Tableros" class="service-img-service">
+        <div class="service-text">
+            <h2>Decoración integral de eventos</h2>
+            <p>
+                Planeación y montaje completo de la decoración, cuidando cada detalle para lograr una ambientación armónica y memorable.
+            </p>
+            <ul>
+                <li>Planeación completa de la decoración del evento</li>
+                <li>Montaje y coordinación de todos los elementos decorativos</li>
+                <li>Ambientación coherente y armoniosa en todo el espacio</li>
+            </ul>
+        </div>
+    </div>
+</section>
+
+        <section class="block service fade-in">
+    <div class="service-content">
+        <img src="Imagenes/Tematico.jpg" alt="Diseño de Tableros" class="service-img-service">
+        <div class="service-text">
+            <h2>Ambientación temática</h2>
+            <p>
+                Diseños conceptuales que integran colores, texturas y elementos decorativos según la temática del evento.
+            </p>
+            <ul>
+                <li>Desarrollo de conceptos decorativos personalizados</li>
+                <li>Integración de colores, texturas y elementos visuales</li>
+                <li>Creación de experiencias visuales memorables</li>
+            </ul>
+        </div>
+    </div>
+</section>
+
+    </main>
+
+    <!-- FOOTER -->
+    <div id="footer-container"></div>
+
+    <script src="js/main.js"></script>
+    <script>
+    const fadeElements = document.querySelectorAll('.fade-in');
+    const observer = new IntersectionObserver(entries => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                entry.target.classList.add('visible');
+                observer.unobserve(entry.target);
+            }
+        });
+    }, { threshold: 0.2 });
+    fadeElements.forEach(el => observer.observe(el));
+    </script>
+
+</body>
+</html>
