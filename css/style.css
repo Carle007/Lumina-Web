@@ -622,3 +622,28 @@ html, body {
     display: inline-block !important;
 }
 
+/* ===============================
+   FOOTER - SIGUENOS BIEN ALINEADO
+================================ */
+
+.footer-social {
+    display: flex;
+    flex-direction: column;   /* título arriba, íconos abajo */
+    align-items: center;
+    gap: 12px;
+}
+
+/* Contenedor de íconos */
+.footer-social-links {
+    display: flex;
+    flex-direction: row;      /* íconos en horizontal */
+    gap: 16px;
+}
+
+.footer-social-links a {
+    display: inline-flex;
+}
+
+.footer-social-links img {
+    width: 30px;
+}
