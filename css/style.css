@@ -509,6 +509,26 @@ html, body {
 
 }
 
+@media (max-width: 768px) {
+    .block.service {
+        padding: 16px;
+        margin-bottom: 24px;
+    }
+}
+
+@media (max-width: 768px) {
+    h2 {
+        font-size: 1.4rem;
+        margin-bottom: 12px;
+    }
+
+    h3 {
+        font-size: 1.15rem;
+    }
+}
+
+
+
 
 
 
