@@ -556,42 +556,49 @@ html, body {
 }
 
 /* ===============================
-   TOP BAR MOBILE - CONTACTO IZQ / REDES DER
+   TOP BAR MOBILE - AJUSTE FINO
 ================================ */
 
 @media (max-width: 768px) {
 
     .top-bar {
         display: flex;
-        flex-direction: row;
         justify-content: space-between;
         align-items: center;
-        gap: 12px;
+        gap: 16px;
     }
 
-    /* IZQUIERDA: teléfono y correo */
+    /* IZQUIERDA: contacto en COLUMNA */
     .top-left {
         display: flex;
-        flex-direction: column;
+        flex-direction: column;     /* 🔴 CLAVE */
         align-items: flex-start;
-        gap: 4px;
+        gap: 6px;
         font-size: 0.85rem;
     }
 
     .top-left span {
+        display: flex;
+        align-items: center;
+        gap: 6px;
         white-space: nowrap;
     }
 
-    /* DERECHA: redes sociales */
+    /* DERECHA: redes en FILA */
     .top-right {
         display: flex;
         flex-direction: row;
-        gap: 10px;        /* redes más juntas */
         align-items: center;
+        gap: 8px;                  /* 🔴 más juntos */
+    }
+
+    .top-right a {
+        margin: 0;                 /* elimina separaciones raras */
     }
 
     .top-right img {
-        width: 22px;
+        width: 26px;               /* 🔴 más grandes */
+        height: auto;
     }
 }
 
@@ -687,4 +694,5 @@ html, body {
 .footer-social-links img {
     width: 30px;
 }
+
 
