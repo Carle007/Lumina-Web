@@ -2,19 +2,16 @@
    VARIABLES
 ================================ */
 :root {
-    /* Colores principales */
     --brick: #C97C8B;        /* Rosa elegante */
     --blue-deep: #6B4E71;    /* Lila profundo */
     --black-industrial: #2E2433;
 
-    /* Neutros */
     --bg-main: #FFF6F8;
     --bg-section: #FFFFFF;
     --text-main: #2E2433;
     --text-secondary: #6F5A75;
     --text-light: #FFFFFF;
    
-    /* Estado */
     --status-ok: #D89AAE;
     --status-warn: #F59E0B;
     --status-error: #DC2626;
@@ -408,5 +405,6 @@ ul li::before {
         text-align: center;
     }
 }
+
 
 
