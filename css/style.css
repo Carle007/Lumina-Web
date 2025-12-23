@@ -95,6 +95,7 @@ h3 {
 /* MENÚ PRINCIPAL */
 .header-main {
     display: flex;
+    flex-direction: row;      /* 🔴 CLAVE */
     justify-content: space-between;
     align-items: center;
     padding: 15px 20px;
@@ -519,6 +520,7 @@ html, body {
         text-align: center;
     }
 }
+
 
 
 
