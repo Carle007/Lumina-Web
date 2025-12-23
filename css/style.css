@@ -251,6 +251,32 @@ h3 {
     border-radius: 10px;
 }
 
+/* ===============================
+   IMÁGENES DE TARJETAS (BASE)
+   Define el comportamiento visual
+================================ */
+.card-img {
+    width: 100%;
+    object-fit: cover;
+    border-radius: 12px;
+    margin-bottom: 16px;
+    display: block;
+}
+
+/* ===============================
+   IMÁGENES - INICIO
+================================ */
+.service-img {
+    height: 220px;
+}
+
+/* ===============================
+   IMÁGENES - SERVICIOS
+================================ */
+.service-img-service {
+    height: 300px;
+}
+
 /* =====================================================
    LISTAS
 ===================================================== */
@@ -382,4 +408,5 @@ ul li::before {
         text-align: center;
     }
 }
+
 
