@@ -549,6 +549,12 @@ html, body {
     }
 }
 
+@media (max-width: 768px) {
+    .footer-social {
+        gap: 20px;
+    }
+}
+
 /* ===============================
    FIX DESKTOP HEADER & FOOTER
 ================================ */
@@ -615,3 +621,4 @@ html, body {
 .footer-social img {
     display: inline-block !important;
 }
+
