@@ -485,3 +485,9 @@ ul li::before {
     color: #bfbfbf;
 }
 
+html, body {
+    max-width: 100%;
+    overflow-x: hidden;
+}
+
+
