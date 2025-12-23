@@ -556,6 +556,46 @@ html, body {
 }
 
 /* ===============================
+   TOP BAR MOBILE - CONTACTO IZQ / REDES DER
+================================ */
+
+@media (max-width: 768px) {
+
+    .top-bar {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        gap: 12px;
+    }
+
+    /* IZQUIERDA: teléfono y correo */
+    .top-left {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 4px;
+        font-size: 0.85rem;
+    }
+
+    .top-left span {
+        white-space: nowrap;
+    }
+
+    /* DERECHA: redes sociales */
+    .top-right {
+        display: flex;
+        flex-direction: row;
+        gap: 10px;        /* redes más juntas */
+        align-items: center;
+    }
+
+    .top-right img {
+        width: 22px;
+    }
+}
+
+/* ===============================
    FIX DESKTOP HEADER & FOOTER
 ================================ */
 
@@ -647,3 +687,4 @@ html, body {
 .footer-social-links img {
     width: 30px;
 }
+
